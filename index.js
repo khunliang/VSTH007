@@ -6,6 +6,11 @@ function printMultiply(){
     let number = Number(numberInput.value);
     let outputHtml = '';
 
+    if (number === 0){
+      output.innerHTML = 'อยากบอกว่าเสียใจ';
+      return;
+    }
+
     for(let i=1; i<=12; i++){
       outputHtml += '<p>';
       outputHtml += number + ' x ' + i + ' = ' + (number * i);
